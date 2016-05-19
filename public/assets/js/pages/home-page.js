@@ -115,9 +115,6 @@ jQuery(function($) {
             }
         });
 
-
-
-
         // JS for section Videos bg
         var gurl = $(".video-embed")[0].src;
         $(".video-button-play ").on('click', function(event) {
@@ -169,9 +166,6 @@ jQuery(function($) {
     };
 
     /*=====  End of SAMPLE FUNCTION  ======*/
-
-
-
 
     /*======================================
     =            INIT FUNCTIONS            =
