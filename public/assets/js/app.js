@@ -279,7 +279,6 @@ jQuery(function($){
 
     $(document).ready(function(){
         N10.mainFunctionality();
-        N10.mainFunction();
     });
 
     $(window).on('load', function() {

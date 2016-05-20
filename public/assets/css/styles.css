@@ -360,7 +360,7 @@ h1 {
 }
 
 .courses-layout .content-wrapper > .content .title .price {
-    color: #ffdd00;
+    color: #222;
     display: inline-block;
 }
 
@@ -477,7 +477,7 @@ h1 {
     text-align: center;
     padding: 5px 15px;
     cursor: pointer;
-    background-color: #ffdd00;
+    background-color: #ccc;
     color: #fff;
     text-transform: uppercase;
     overflow: hidden;
@@ -510,6 +510,11 @@ h1 {
 
 .videos {
     background-image: url('../images/background/homepage-banner.jpg');
+}
+
+.videos.layout-1 .video-thumbnail {
+    bottom: -55px;
+    top: auto;
 }
 
 /*----------  Layouts and Positioning ----------*/
@@ -815,6 +820,12 @@ h1 {
     width: -moz-calc((100% - 54px) * 12 / 100);
 }
 
+.tab-search-long .find-transfer-widget .count {
+    width: calc((100% - 54px) * 12 / 100);
+    width: -webkit-calc((100% - 54px) * 12 / 100);
+    width: -moz-calc((100% - 54px) * 12 / 100);
+}
+
 .tab-search-long .input-daterange {
     width: calc((100% - 54px) * 34 / 100);
     width: -webkit-calc((100% - 54px) * 34 / 100);
@@ -829,6 +840,47 @@ h1 {
     padding: 40px 30px;
     text-align: center;
     color: #545454;
+}
+
+.footer-widget {
+  text-align: center !important;
+}
+.footer-widget ul {
+  margin-bottom: 0;
+  text-align: left;
+  margin-left: 45px;
+}
+.footer-widget ul li {
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+.footer-widget ul li .link {
+  display: block;
+  color: #8e8e8e;
+  position: relative;
+  padding: 0 0 12px 20px;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+.footer-widget ul li .link:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: '\f10c';
+  color: #ffdd00;
+  left: 0;
+  font-size: 7px;
+}
+.footer-widget ul li:hover .link {
+  color: #ffdd00;
+}
+.footer-widget ul li:hover .link:before {
+  content: '\f111';
+}
+.footer-widget ul li:last-child .link {
+  padding-bottom: 0;
 }
 
 /*----------  Page Title & Buttons ----------*/
@@ -1156,6 +1208,31 @@ h1 {
     text-align: left;
 }
 
+.group-title .sub-title .text {
+	color: #222;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.group-title .sub-title .icons {
+	font-size: 35px;
+    color: #111;
+    margin-left: 60px;
+    position: relative;
+}
+
+.group-title .sub-title .icons:after {
+    position: absolute;
+    content: '';
+    width: 54px;
+    height: 2px;
+    background-color: #ccc;
+    right: 105%;
+    bottom: 7px;
+}
 
 /*---------- Responsive ----------*/
 
