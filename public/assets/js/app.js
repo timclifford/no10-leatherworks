@@ -15,6 +15,33 @@ jQuery(function($){
         var width_boder = $('.homepage-default .title').width() - $('.homepage-default .text').width() - 10;
         $('.homepage-default .text .boder').width(width_boder);
 
+        // Slick slider for homepage banner
+        $('.homepage-banner-slider').slick({
+            centerMode: true,
+			centerPadding: '0px',
+			slidesToShow: 3,
+			responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '10px',
+		        slidesToShow: 1
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '10px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+        });
+
         // slide section for course teasers
 	    $('.courses-list').slick({
             infinite: true,
@@ -49,45 +76,8 @@ jQuery(function($){
             }]
         });
 
-        // Slide section HAPPY TRAVELER
-        $('.traveler-list').slick({
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            autoplay: false,
-            speed: 700,
-            responsive: [{
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    dots: true,
-                    arrows: false
-                }
-            }, {
-                breakpoint: 601,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true,
-                    arrows: false
-                }
-            }]
-        });
-
-        // slide section NEWS AND UPDATES
-        $('.news-list').slick({
-            infinite: true,
-            dots: true,
-            speed: 700,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            // fade: true,
-            cssEase: 'linear',
-            arrows: false
-
-        });
-
+	    // Slide section for course banner
+	    $('.course-banner-slider').slick();
 
         ////Responsive for Tab search
         $(window).on('resize load', function(event) {
@@ -132,14 +122,6 @@ jQuery(function($){
             $(".video-button-close").removeClass('show-video');
         });
 
-        //parallax banner sale 2
-		/*if ($('.banner-sale-2').length) {
-            $('.banner-sale-2').mousemove(function(e) {
-                $('.banner-sale-2 .text-parallax').parallax(25, e);
-                // $( '.background' ).parallax( -30, e );
-            });
-        }*/
-
         if($(".input-daterange").length || $(".date .tb-input").length) {
             // jQuery Date Picker
             $('.input-daterange, .date .tb-input').datepicker({
@@ -154,17 +136,6 @@ jQuery(function($){
 
         // ----------------------- SELECTBOX --------------------------- //
         $(".selectbox").selectbox();
-
-        // ----------------------- CLOSE DATEPICKER --------------------------- //
-		/*$('.sbHolder').on('click', function(event){
-            $('.input-daterange .tb-input, .date .tb-input').datepicker('hide');
-        });
-
-        $('body').on('click', function(event){
-            if ( $('.sbHolder').has(event.target).length === 0 && !$('.sbHolder').is(event.target)) {
-                $(".selectbox").selectbox('close');
-            }
-        });*/
 
         $('#back-top .link').on('click', function () {
             $('body,html').animate({
@@ -247,34 +218,15 @@ jQuery(function($){
             });
         }
 
-        // Slick slider for homepage banner
-        $('.homepage-banner-slider').slick({
-            centerMode: true,
-			centerPadding: '60px',
-			slidesToShow: 2,
-			variableWidth: true,
-			responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        arrows: false,
-		        centerMode: true,
-		        centerPadding: '40px',
-		        slidesToShow: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        arrows: false,
-		        centerMode: true,
-		        centerPadding: '40px',
-		        slidesToShow: 1
-		      }
-		    }
-		  ]
-        });
-
+        // Please wait stuff
+        if ($(window).width() >= 768) {
+	        window.loading_screen = window.pleaseWait({
+	            logo: "assets/images/logoLarge.png",
+	            backgroundColor: '#222',
+	            loadingHtml: "<div class='spinner sk-spinner-wave'><div class='rect1'></div><div class='rect2'></div><div class='rect3'></div><div class='rect4'></div><div class='rect5'></div></div>"
+	        });
+	        window.loading_screen.finish();
+	    }
     };
 
     $(document).ready(function(){
