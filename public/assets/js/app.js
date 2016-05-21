@@ -82,6 +82,7 @@ jQuery(function($){
             slidesToScroll: 1,
             arrows: true,
             speed: 2000,
+            swipe: true,
             fade: true,
             autoplay: true,
             autoplaySpeed: 4000,
