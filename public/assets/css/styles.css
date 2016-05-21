@@ -1866,8 +1866,19 @@ h1 {
 }
 
 /*----------  Media screen min width 601px  ----------*/
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 668px) {
     .btn.btn-white {
+        display: none;
+    }
+    .tab-search .tab-btn-wrapper {
+        opacity: 1 !important;
+    }
+}
+
+/*----------  Media screen min width 601px  ----------*/
+@media screen and (max-width: 668px) {
+
+    .logo .headline-btn .btn-click.zip {
         display: none;
     }
 }
@@ -1885,10 +1896,6 @@ h1 {
 	.course-banner-slider {
 		margin: 0;
 	}
-
-    .logo .headline-btn .btn-click.zip {
-        display: none;
-    }
 
     .homepage-banner-content .logo {
         margin: 0 25px;
