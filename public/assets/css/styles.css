@@ -1776,7 +1776,7 @@ h1 {
     }
 
     section#home-search {
-        margin-top: -60px;
+        margin-top: -80px;
         display: inline-block;
         width: 100%;
         margin: 0;
@@ -1877,6 +1877,15 @@ h1 {
 	.group-button .btn:first-child {
 		margin: 20px 0;
 	}
+
+    .banner.homepage-banner {
+        text-align: center;
+        background-position: bottom;
+        height: 100vh;
+        background-image: url('../images/background/homepage-banner-min.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 
