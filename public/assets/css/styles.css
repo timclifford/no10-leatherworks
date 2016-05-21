@@ -1324,7 +1324,7 @@ h1 {
   position: absolute;
   font-family: 'FontAwesome';
   content: '\f10c';
-  color: #ecf0f1;
+  color: #3498db;
   left: 0;
   font-size: 7px;
 }
@@ -1865,6 +1865,11 @@ h1 {
         background-repeat: no-repeat;
     }
 
+    .homepage-banner-wrapper .homepage-banner-content {
+        display: table-cell !important;
+        vertical-align: middle !important;
+    }
+
 }
 
 /*----------  Media screen max width 480px  ----------*/
@@ -1888,6 +1893,16 @@ h1 {
 	.group-button .btn:first-child {
 		margin: 20px 0;
 	}
+    .videos.layout-1 .video-thumbnail {
+        bottom: 0;
+        top: auto;
+    }
+    .tab-search-long .input-daterange, .tab-search-long .find-main-widget .input-daterange {
+        width: calc((100% - 54px) * 122 / 100);
+        width: -webkit-calc((100% - 54px) * 122 / 100);
+        width: -moz-calc((100% - 54px) * 122 / 100);
+        margin-right: 8px;
+    }
 }
 
 
@@ -1916,7 +1931,6 @@ h1 {
 
     .text-contactbox .text-right .group-button .btn {
         width: auto;
-        margin: 0 20px 0 0;
     }
 
 }
