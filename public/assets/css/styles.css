@@ -148,6 +148,11 @@ h1 {
     display: inline-block;
 }
 
+.logo-footer img {
+    margin: 0 auto;
+    max-width: 230px;
+}
+
 /*---------- Menus ---------*/
 
 .menu-mobile {
@@ -914,6 +919,10 @@ h1 {
     -o-transition: all 0.3s ease;
 }
 
+.homepage-banner-slider .slick-next:before {
+    color: black;
+}
+
 .homepage-banner-slider .slick-prev:before, .slick-next:before {
 	opacity: .75;
     color: black;
@@ -1410,6 +1419,16 @@ h1 {
   border: 1px solid #3c3c3c;
   color: #fff;
 }
+
+.btn.btn-white {
+  background-color: #fff;
+  border: 1px solid #f7f7f7;
+  color: #111;
+}
+.btn.btn-white:hover {
+    text-decoration: underline;
+}
+
 .btn.btn-gray {
   background-color: #4d4d4d;
   border: 1px solid #4d4d4d;
@@ -1448,6 +1467,11 @@ h1 {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
+
+.btn-slide .text a {
+    color: #fff;
+}
+
 .btn-slide .icons {
   position: absolute;
   left: 1px;
@@ -1841,15 +1865,30 @@ h1 {
 
 }
 
+/*----------  Media screen min width 601px  ----------*/
+@media screen and (min-width: 601px) {
+    .btn.btn-white {
+        display: none;
+    }
+}
+
 /*----------  Media screen max width 600px  ----------*/
 @media screen and (max-width: 600px) {
 	.menu-mobile .main-menu {
 	    font-size: 14px;
 	}
 
+    .margin-res {
+        margin: 20px 0 0;
+    }
+
 	.course-banner-slider {
 		margin: 0;
 	}
+
+    .logo .headline-btn .btn-click.zip {
+        display: none;
+    }
 
     .homepage-banner-content .logo {
         margin: 0 25px;
@@ -1895,6 +1934,18 @@ h1 {
 	    color: #fff;
 	}
 
+    .tab-search-long button[type="submit"], .tab-search-long .find-main-widget button[type="submit"] {
+        padding: 0;
+    }
+
+    .btn-slide .icons {
+        display: none;
+    }
+
+    .btn-slide:before {
+        padding: 0;
+    }
+
 	.text-contactbox .text-right {
 		padding: 20px;
 	}
@@ -1912,6 +1963,48 @@ h1 {
         width: -moz-calc((100% - 54px) * 122 / 100);
         margin-right: 8px;
     }
+    
+    .logo-footer img {
+        margin: 0 auto;
+        max-width: 210px;
+    }
+
+    .logo-footer {
+        margin-bottom: 40px;
+    }
+
+    .about-us.padding-top {
+        padding-top: 20px;
+    }
+
+    .about-us.padding-bottom {
+        padding-bottom: 20px;
+    }
+
+    .about-us .group-button a {
+        width: 100%;
+    }
+
+    .courses.padding-top {
+        padding-top: 50px;
+    }
+
+    .courses.padding-bottom {
+        padding-bottom: 50px;
+    }
+
+    .banner-contactus .banner-contactus-wrapper {
+        padding: 30px 0;
+    }
+
+    .footer-main.padding-top {
+        padding-top: 60px;
+    }
+
+    .footer-main.padding-bottom {
+        padding-bottom: 20px;
+    }
+
 }
 
 

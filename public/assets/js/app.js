@@ -24,7 +24,7 @@ jQuery(function($){
 		    {
 		      breakpoint: 768,
 		      settings: {
-		        arrows: false,
+		        arrows: true,
 		        centerMode: true,
 		        centerPadding: '0px',
 		        slidesToShow: 2
@@ -35,6 +35,10 @@ jQuery(function($){
 		      settings: {
 		        arrows: false,
 		        centerMode: true,
+                autoplay: true,
+                swipe: true,
+                dots: true,
+                autoplaySpeed: 4000,
 		        centerPadding: '0px',
 		        slidesToShow: 1
 		      }
