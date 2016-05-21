@@ -26,8 +26,8 @@ jQuery(function($){
 		      settings: {
 		        arrows: false,
 		        centerMode: true,
-		        centerPadding: '10px',
-		        slidesToShow: 1
+		        centerPadding: '0px',
+		        slidesToShow: 2
 		      }
 		    },
 		    {
@@ -35,7 +35,7 @@ jQuery(function($){
 		      settings: {
 		        arrows: false,
 		        centerMode: true,
-		        centerPadding: '10px',
+		        centerPadding: '0px',
 		        slidesToShow: 1
 		      }
 		    }
@@ -77,7 +77,32 @@ jQuery(function($){
         });
 
 	    // Slide section for course banner
-	    $('.course-banner-slider').slick();
+	    $('.course-banner-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            speed: 2000,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            dots: true
+        });
+
+        //Smooth Scroll jQuery - see https://css-tricks.com/snippets/jquery/smooth-scrolling/
+/*        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });*/
 
         ////Responsive for Tab search
         $(window).on('resize load', function(event) {

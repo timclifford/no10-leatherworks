@@ -4,24 +4,23 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>No10 Workshops - Leather Craft Workshops and Courses for all ages</title>
-		<!-- FONTS CSS-->
+		<!-- Fonts CSS-->
 	    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
 	    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700">
 	    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome/css/font-awesome.css">
 	    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-flaticon/flaticon.css">
-	    <!-- LIBRARY CSS-->
+	    <!-- Libraries CSS-->
 	    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+	   	<link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
 	    <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
 	    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
 	    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
 	    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
 	    <link type="text/css" rel="stylesheet" href="assets/libs/please-wait/please-wait.css">
-	    <!-- STYLE CSS-->
-	    <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
+	    <!-- Styling CSS-->
+	    <link type="text/css" rel="stylesheet" href="assets/css/helper.css">
 	    <link type="text/css" rel="stylesheet" href="assets/css/components.css">
 	    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
-	    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
-
 		<link type="text/css" rel="stylesheet" href="assets/css/styles.css">
 
 	</head>
@@ -51,7 +50,7 @@
 	                    <li><a href="contact.html" class="main-menu"><span class="text">Contact us</span></a></li>
 	                </ul>
 	                <ul class="list-unstyled list-inline login-widget">
-	                    <li><a href="courses.html" class="item">Book now</a></li>
+	                    <li class="btn-book book"><a href="courses.html" class="item">Book now</a></li>
 	                </ul>
 	            </div>
 	        </div>
@@ -59,7 +58,7 @@
 
     <div class="wrapper-content">
         <header>
-            <div class="bg-transparent header-01">
+            <div class="bg-transparent">
                 <div class="header-topbar">
                     <div class="container">
                         <ul class="topbar-left list-unstyled list-inline pull-left">
@@ -94,6 +93,11 @@
                 <section class="page-banner homepage-default banner homepage-banner">
                     <div class="container">
                         <div class="homepage-banner-wrapper">
+                        	<div class="course-banner-slider visible-md-lg">								
+								<img src="assets/images/background/homepage-banner-min.jpg" alt="Leatherworks">
+								<img src="assets/images/machine.jpg" alt="Leatherworks">
+								<img src="assets/images/leather-working.jpg" alt="Leatherworks">
+							</div>
                             <div class="homepage-banner-content">
 									<div class="logo">
 										<a href="index.html" class="header-logo">
@@ -104,7 +108,7 @@
 	                                	</div>
 	                                	<div class="headline-btn">
 	                            			<a href="courses.html" data-hover="Find out more" class="btn-click">
-	                            				<span class="text">more</span>
+	                            				<span class="text">--------------------------------------</span>
 	                            				<span class="icons">
 	                            					<div class="zipper">
 	                                					<div class="slider">
@@ -119,12 +123,6 @@
 	                                </div>
                             </div>
                         </div>
-	            		<div class="course-banner-slider visible-md-lg">									
-							<div class="hb-slide"><a href="courses.html"><img src="assets/images/toolsSmall.jpg" alt=""/></a></div>
-							<div class="hb-slide"><a href="courses.html"><img src="assets/images/machineSmall.jpg" alt=""/></a></div>
-							<div class="hb-slide"><a href="courses.html"><img src="assets/images/leather-workingSmall.jpg" alt=""/></a></div>
-							<div class="hb-slide"><a href="courses.html"><img src="assets/images/equipmentSmall.png" alt=""/></a></div>
-						</div>
                     </div>
                 </section>
                 <section id="home-search">
@@ -134,7 +132,7 @@
                                 <div class="col-xs-12">
                                     <ul role="tablist" class="nav nav-tabs">
                                         <li role="presentation" class="tab-btn-wrapper active">
-                                        	<a href="#courses" aria-controls="flight" role="tab" data-toggle="tab" class="tab-btn">
+                                        	<a href="#courses" aria-controls="courses" role="tab" data-toggle="tab" class="tab-btn">
                                         		<i class="fa fa-book"></i>
                                     			<span class="text">All courses</span>
                                     			<span class="xs">Search all out current courses</span>
@@ -217,7 +215,7 @@
                                                 </div>
                                             </div>
                                             <div role="tabpanel" id="group" class="tab-pane fade">
-                                                <div class="find-widget find-transfer-widget widget"><h4 class="title-widgets">Find group courses/workshops</h4>    
+                                                <div class="find-widget find-main-widget widget"><h4 class="title-widgets">Find group courses/workshops</h4>    
                                                 	<form class="content-widget">
                                                         <div class="ffw-radio-selection">
 	                                                        <span class="ffw-radio-btn-wrapper">
@@ -263,7 +261,7 @@
                                                 </div>
                                             </div>
                                             <div role="tabpanel" id="one-to-one" class="tab-pane fade">
-                                                <div class="find-widget find-hotel-widget widget"><h4 class="title-widgets">Find one-to-one courses</h4>
+                                                <div class="find-widget find-main-widget widget"><h4 class="title-widgets">Find one-to-one courses</h4>
 
                                                     <form class="content-widget">
                                                         <div class="ffw-radio-selection">
@@ -310,7 +308,7 @@
                                                 </div>
                                             </div>
                                             <div role="tabpanel" id="young" class="tab-pane fade">
-                                                <div class="find-widget find-car-widget widget"><h4 class="title-widgets">Find courses for young people</h4>
+                                                <div class="find-widget find-young-widget widget"><h4 class="title-widgets">Find courses for young people</h4>
 
                                                     <form class="content-widget">
                                                         <div class="ffw-radio-selection">
@@ -382,7 +380,7 @@
                                 	<a href="about-us.html" class="btn">Our company</a>
                             	</div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 hidden-xs">
                                 <div data-wow-delay="0.5s" class="about-us-image wow zoomIn"><img src="assets/images/about-us.png" alt="" class="img-responsive"></div>
                             </div>
                         </div>
@@ -536,7 +534,7 @@
 
                         <div class="row">
                                 
-                                <div class="col-md-2 col-xs-2">
+                                <div class="col-md-2 col-xs-3">
                                     <div class="footer-widget widget text-center">
                                         <div class="title-widget">Newsfeed</div>
                                         <div class="content-widget">
@@ -549,7 +547,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-xs-5">
+                                <div class="col-md-4 col-xs-6">
 									<div class="footer-widget widget text-center">
                                         <div class="title-widget">Important dates</div>
                                         <div class="content-widget">
@@ -562,7 +560,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2 col-xs-2">
+                                <div class="col-md-3 col-xs-3">
                                     <div class="footer-widget widget text-center">
                                         <div class="title-widget">Courses</div>
                                         <div class="content-widget">
@@ -575,7 +573,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-xs-5">
+                                <div class="col-md-3 col-xs-12 margin-res">
                                     <div class="contact-us-widget widget">
                                         <div class="title-widget">Get in touch</div>
                                         <div class="content-widget">
