@@ -245,7 +245,7 @@ jQuery(function($){
         }
 
         // Please wait stuff
-        if ($(window).width() >= 768) {
+        if ($(window).width() > 1024) {
 	        window.loading_screen = window.pleaseWait({
 	            logo: "assets/images/logoLarge.png",
 	            backgroundColor: '#222',
@@ -253,6 +253,7 @@ jQuery(function($){
 	        });
 	        window.loading_screen.finish();
 	    }
+
     };
 
     $(document).ready(function(){
