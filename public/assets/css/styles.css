@@ -1866,8 +1866,11 @@ h1 {
     }
 
     .homepage-banner-wrapper .homepage-banner-content {
-        display: table-cell !important;
-        vertical-align: middle !important;
+         position:relative;
+         -webkit-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         transform: translateY(-50%);
+         top:50%;
     }
 
 }
