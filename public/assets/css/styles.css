@@ -1873,6 +1873,12 @@ h1 {
          top:50%;
     }
 
+    .tab-search .tab-btn-wrapper:first-child .tab-btn {
+        border-radius: 15px 15px 0 0;
+        -webkit-border-radius: 15px 15px 0 0;
+        -moz-border-radius: 15px 15px 0 0;
+    }
+
 }
 
 /*----------  Media screen max width 480px  ----------*/
