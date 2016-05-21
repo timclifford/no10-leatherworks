@@ -1854,6 +1854,17 @@ h1 {
     .homepage-banner-content .logo {
         margin: 0 25px;
     }
+    
+    .banner.homepage-banner {
+        text-align: center;
+        background-position: bottom;
+        height: 100vH;
+        max-height: 500px;
+        background-image: url('../images/background/homepage-banner-min-small.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 }
 
 /*----------  Media screen max width 480px  ----------*/
@@ -1877,15 +1888,6 @@ h1 {
 	.group-button .btn:first-child {
 		margin: 20px 0;
 	}
-
-    .banner.homepage-banner {
-        text-align: center;
-        background-position: bottom;
-        height: 100%;
-        background-image: url('../images/background/homepage-banner-min-small.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 }
 
 
