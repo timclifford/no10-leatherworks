@@ -1879,12 +1879,7 @@ h1 {
 	}
 
     .banner.homepage-banner {
-        text-align: center;
-        background-position: bottom;
-        height: 100vh;
-        background-image: url('../images/background/homepage-banner-min.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: none;
     }
 }
 
