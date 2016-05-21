@@ -1776,12 +1776,10 @@ h1 {
     }
 
     section#home-search {
-        margin-top: -80px;
+        margin-top: -60px;
         display: inline-block;
-    }
-
-    section#home-search .tab-content-bg {
         width: 100%;
+        margin: 0;
     }
 
 }
