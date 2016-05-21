@@ -1904,6 +1904,11 @@ h1 {
     .about-us.padding-bottom {
         padding-bottom: 20px;
     }
+    
+    .about-us .group-button .btn, .banner-contactus .text-contactbox .text-right .group-button .btn {
+        width: 100%;
+        margin-top: 20px;
+    }
 
     .courses.padding-top {
         padding-top: 50px;
@@ -1923,6 +1928,10 @@ h1 {
 
     .footer-main.padding-bottom {
         padding-bottom: 20px;
+    }
+
+    .margin-top70 {
+        margin-top: 40px;
     }
 
 }
