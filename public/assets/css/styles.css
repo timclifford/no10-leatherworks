@@ -1775,6 +1775,11 @@ h1 {
         top: auto;
     }
 
+    section#home-search {
+        margin-top: -100px;
+        display: inline-block;
+    }
+
 }
 
 /*----------  Media screen max width 991px  ----------*/
