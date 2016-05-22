@@ -1168,7 +1168,6 @@ h1 {
 
 .text-contactbox .text-right .title {
     font-size: 20px;
-    text-transform: capitalize;
     margin: 0;
     padding: 0 0 5px 0;
     display: inline-block;
@@ -1872,6 +1871,24 @@ h1 {
         padding-right: 20px;
         margin: 0 0 20px 0;
     }
+}
+
+/*----------  Ipad Portrait Specific  ----------*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    
+    .logo .headline-btn .btn-click.zip {
+        display: none;
+    }
+
+    .btn.btn-white {
+        display: inline-block !important;
+        width: 400px;
+        font-weight: bold;
+    }
+
 }
 
 /*----------  Media screen max width 767px  ----------*/
