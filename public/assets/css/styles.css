@@ -1873,6 +1873,17 @@ h1 {
     }
 }
 
+/*----------  Ipad Portrait & Landscape Specific  ----------*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    
+    .page-banner {
+        margin-bottom: -93px !important;
+    }
+
+}
+
 /*----------  Ipad Portrait Specific  ----------*/
 @media only screen 
 and (min-device-width : 768px) 
@@ -1889,6 +1900,23 @@ and (orientation : portrait) {
         font-weight: bold;
     }
 
+}
+
+/*----------  Ipad Landscape Specific  ----------*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {     
+
+    .logo .headline-btn .btn-click.zip {
+        display: none;
+    }
+
+    .btn.btn-white {
+        display: inline-block !important;
+        width: 400px;
+        font-weight: bold;
+    }
 }
 
 /*----------  Media screen max width 767px  ----------*/
