@@ -19,6 +19,7 @@ body {
   color: #555e69;
   background-color: #fff;
 }
+/* pleasewait js bug fix */
 body > .inner {
   display: none;
 }
