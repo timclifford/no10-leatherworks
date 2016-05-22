@@ -1878,9 +1878,10 @@ h1 {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
     
+/* private browsing bug fix
     .page-banner {
-        margin-bottom: -153px !important;
-    }
+    margin-bottom: -153px !important;
+} */
 
 }
 

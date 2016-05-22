@@ -286,8 +286,9 @@ jQuery(function($){
                 $('.page-banner').css('margin-bottom',header_height*(-1) - tabBtn_height);
             }, 100);
         };
+
         //Reload window when resized
-/*        if ($(window).width() >= 768 && $(window).width() <= 1024) {
+        /* if ($(window).width() >= 768 && $(window).width() <= 1024) {
             $(window).on('resize', function(){
                 location.reload();
             });
