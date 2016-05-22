@@ -166,9 +166,10 @@ jQuery(function($){
         // ----------------------- WOW-JS --------------------------- //
         new WOW().init();
 
-        // ----------------------- SELECTBOX --------------------------- //
+        // ----------------------- SelectBox --------------------------- //
         $(".selectbox").selectbox();
 
+        // Back to top JS with animation speed
         $('#back-top .link').on('click', function () {
             $('body,html').animate({
                 scrollTop: 0
@@ -176,6 +177,7 @@ jQuery(function($){
             return false;
         });
 
+        // When scroll goes past default window height - show back-to-top button
         var temp = $(window).height();
         $(window).on('scroll load', function (event) {
             if ($(window).scrollTop() > temp){
@@ -186,10 +188,12 @@ jQuery(function($){
             }
         });
 
+        // Greater than iPad screen size
         if ($(window).width() > 768){
-             // Add class fixed for menu when scroll
+
             var window_height = $(window).height();
 
+            // Fix main menu to top
             $(window).on('scroll load', function (event) {
                 if ($(window).scrollTop() > window_height) {
                     $(".header-main").addClass('header-fixed');
@@ -199,7 +203,7 @@ jQuery(function($){
                 }
             });
 
-            // Show menu when scroll up, hide menu when scroll down
+            // Show menu when scrolled up, hide menu when scroll down
             var lastScroll = 50;
             $(window).on('scroll load', function (event) {
                 var st = $(this).scrollTop();
@@ -262,18 +266,23 @@ jQuery(function($){
 
     };
 
+    // Instantiate N10 prototype.
     $(document).ready(function(){
         N10.mainFunctionality();
     });
 
     $(window).on('load', function() {
-    	//Offset the course tabs to fit inside header container
-        if($(window).width() < 768) {
+    	//Offset the course tabs to fit inside header container - delay by 0.1 sec
+        if($(window).width() <= 768) {
             setTimeout(function () {
                 var header_height = $('header').height();
                 var tabBtn_height = $('.tab-search .nav-tabs .tab-btn-wrapper').height();
-                console.log(tabBtn_height);
+                // Append css styling to .page-banner - Inverse 'top' attribute to (-header_height). e.g 50 becomes -50.
                 $('.page-banner').css('top',header_height*(-1));
+                // Append css styling to .page-banner - Inverse 'margin-bottom' attribute to (-header_height) - the total height of the search tab bar.
+                // E.g - header_height = 50 and inversed to -50.
+                //     - tabBtn_height = 50.
+                //     - margin-bottom = -50 - 50 = -100px.
                 $('.page-banner').css('margin-bottom',header_height*(-1) - tabBtn_height);
             }, 100);
         };
