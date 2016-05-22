@@ -229,8 +229,10 @@ h1 {
     background-color: #f7f7f7;
 }
 .menu-mobile .dropdown-menu.dropdown-menu-1 .link-page {
-  padding: 20px 0px 20px 30px;
-  color: #3c3c3c;
+    padding: 20px 0px 20px 30px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .menu-mobile .dropdown-menu.dropdown-menu-1 .link-page:hover {
   background-color: transparent;
@@ -1772,7 +1774,15 @@ h1 {
 
 /*---------- Responsive ----------*/
 
-/*----------  Media screen max width 1199px  ----------*/
+/*----------  Media screen min width 1440px  ----------*/
+@media screen and (min-width: 1440px) {
+    .slick-slide img {
+        display: inline-block;
+        width: 375px;
+    }
+}
+
+/*----------  Media screen max width 1440px  ----------*/
 @media screen and (max-width: 1440px) {
 
 }
@@ -1822,7 +1832,14 @@ h1 {
 
 /*----------  Media screen max width 768px  ----------*/
 @media screen and (max-width: 768px) {
-	.hamburger-menu {
+	.padding-bottom {
+        padding-bottom: 30px;
+    }
+    .padding-top {
+        padding-top: 30px;
+    }
+
+    .hamburger-menu {
 	    display: table;
 	    position: absolute;
 	    left: 10px;
@@ -1832,6 +1849,29 @@ h1 {
 	.wrapper-mobile-nav {
 	    display: block;
 	}
+
+    .videos.layout-1 .video-thumbnail {
+        bottom: 0;
+        top: auto;
+    }
+
+    .about-us-image {
+        display: none;
+    }
+
+    .about-us .group-button .btn {
+        margin-right: 10px;
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .text-contactbox .text-right .group-button .btn {
+        width: 100%;
+        text-transform: capitalize;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 0 20px 0;
+    }
 }
 
 /*----------  Media screen max width 767px  ----------*/
