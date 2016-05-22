@@ -483,7 +483,7 @@ h1 {
 .header-topbar a:hover,
 .header-topbar p:hover,
 .header-topbar span:hover {
-  color: #ffdd00;
+  color: #3498db;
 }
 .header-topbar .topbar-left {
   margin-bottom: 0;
@@ -515,7 +515,7 @@ h1 {
 }
 .header-topbar .topbar-left > li:hover i,
 .header-topbar .topbar-left > li:hover span {
-  color: #ffdd00;
+  color: #3498db;
 }
 .header-topbar .topbar-right {
   margin-bottom: 0;
@@ -1375,7 +1375,7 @@ h1 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .form-email .btn-email {
-  background-color: #ffdd00;
+  background-color: #3498db;
   color: #121212;
   line-height: 33px;
   text-align: center;
@@ -1879,7 +1879,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
     
     body.safari .page-banner {
-        margin-bottom: -123px !important;
+        margin-bottom: -120px;
     }
 
 }

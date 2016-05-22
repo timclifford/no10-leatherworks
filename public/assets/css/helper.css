@@ -4,7 +4,7 @@
 
 /*----------   Find     ---------*/
 .find-widget {
-  background-color: #ffdd00;
+  background-color: #3498db;
   padding: 40px 30px;
   text-align: center;
   color: #545454;
@@ -53,11 +53,11 @@
   margin-left: 2px;
   margin-right: 10px;
   background-color: #505050;
-  color: #ffdd00;
+  color: #3498db;
   font-size: 14px;
 }
 .find-widget .submit-btn-wrapper .text {
-  color: #ffdd00;
+  color: #3498db;
   font-size: .93rem;
 }
 .find-widget .text-input > .text-box-wrapper:first-child {
@@ -311,7 +311,7 @@
 .tab-search-condensed {
   position: relative;
   z-index: 1;
-  background-color: #ffdd00;
+  background-color: #3498db;
 }
 .tab-search-condensed .find-widget {
   padding: 40px 70px;
@@ -488,7 +488,7 @@
 .tab-search .tab-btn-wrapper .tab-btn:focus,
 .tab-search .tab-btn-wrapper .tab-btn:hover {
   border: none;
-  background-color: #ffdd00;
+  background-color: #3498db;
 }
 .tab-search .tab-btn-wrapper .tab-btn:active i,
 .tab-search .tab-btn-wrapper .tab-btn:focus i,
@@ -505,7 +505,7 @@
   margin-right: 10px;
 }
 .tab-search .tab-btn-wrapper.active .tab-btn {
-  background-color: #ffdd00;
+  background-color: #3498db;
   color: #555;
 }
 .tab-search .tab-btn-wrapper.active .tab-btn i {
@@ -541,10 +541,10 @@
   color: #555;
 }
 .tab-search-default .tab-btn-wrapper .tab-btn i {
-  color: #ffdd00;
+  color: #3498db;
 }
 .tab-search-default .tab-content-bg {
-  background-color: #ffdd00;
+  background-color: #3498db;
   position: relative;
 }
 .tab-search-long .tab-btn-wrapper span.xs {
@@ -563,7 +563,7 @@
 }
 .tab-search-condensed .tab-btn-wrapper .tab-btn {
   background-color: #3c3c3c;
-  color: #ffdd00;
+  color: #3498db;
 }
 .tab-search-condensed .tab-btn-wrapper .tab-btn:first-child,
 .tab-search-condensed .tab-btn-wrapper .tab-btn:last-child {
@@ -572,7 +572,7 @@
   -moz-border-radius: 0;
 }
 .tab-search-condensed .tab-btn-wrapper .tab-btn i {
-  color: #ffdd00;
+  color: #3498db;
   margin-right: 0;
 }
 
@@ -615,7 +615,7 @@ footer .widget .title-widget {
 
 /*----------  4.2. subscribe email  ----------*/
 .subscribe-email {
-  background-color: #ffdd00;
+  background-color: #3498db;
   color: #777777;
   padding: 30px 0;
 }
@@ -672,7 +672,7 @@ footer .widget .title-widget {
   padding: 0;
   margin-right: 3px;
   background-color: #505050;
-  color: #ffdd00;
+  color: #3498db;
   font-size: 14px;
 }
 .form-subscribe-email ::-webkit-input-placeholder {

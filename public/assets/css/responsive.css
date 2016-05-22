@@ -277,7 +277,7 @@
     bottom: -50px;
   }
   .wrapper-expert .slick-dots li.slick-active button {
-    border: 1px solid #ffdd00;
+    border: 1px solid #3498db;
   }
   .wrapper-expert .slick-dots li button {
     border: 1px solid #c3c3c3;
@@ -288,7 +288,7 @@
     display: block;
   }
   .wrapper-expert .slick-dots li.slick-active button:before {
-    color: #ffdd00;
+    color: #3498db;
   }
   .wrapper-expert .slick-dots li button:before {
     width: 16px;
@@ -635,7 +635,7 @@
     background-color: #222;
   }
   .tab-search-default .tab-btn-wrapper.active .tab-btn i {
-    color: #ffdd00;
+    color: #3498db;
   }
   .tab-search-default .slick-prev {
     left: 20px;
@@ -778,7 +778,7 @@
     background-color: #222;
   }
   .tab-search-default .tab-btn-wrapper.active .tab-btn i {
-    color: #ffdd00;
+    color: #3498db;
   }
   .tab-search-default .slick-prev {
     left: 20px;
@@ -836,7 +836,7 @@
 /*----------  Media screen max width 414px  ----------*/
 @media screen and (max-width: 414px) {
   .menu-mobile {
-    background-color: #ffdd00;
+    background-color: #3498db;
     text-align: center;
   }
   footer .col-md-2,
