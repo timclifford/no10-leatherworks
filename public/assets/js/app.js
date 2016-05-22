@@ -273,7 +273,6 @@ jQuery(function($){
 
     $(window).on('load', function() {
     	//Offset the course tabs to fit inside header container - delay by 0.1 sec
-       console.log($(window).width()); //
         if($(window).width() <= 1024) {
             setTimeout(function () {
                 var header_height = $('header').height();

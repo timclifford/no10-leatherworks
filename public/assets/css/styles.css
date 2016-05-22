@@ -417,6 +417,23 @@ h1 {
 	background: inherit;
 }
 
+.bg-black {
+    background: #222;
+}
+
+.bg-black .hamburger-menu {
+    display: none;
+}
+
+.bg-black .header-topbar .login-widget .item {
+    text-transform: capitalize;
+    color: white;
+}
+
+.bg-black .header-topbar li.btn-book a.item {
+    color: black;
+}
+
 .bg-transparent {
   background-color: transparent;
   transition: all 0.6s ease;
